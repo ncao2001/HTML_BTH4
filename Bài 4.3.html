@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 4.3</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .anhchinh img{
+                width: 722px;
+                height: 700px;
+                margin-left: -7px;
+                margin-top: -7px;
+                position: absolute;
+                z-index: -1;
+            }
+            .main{
+                position: absolute;
+                background-color: white;
+                margin-left: 40px;
+                margin-right: 50px;
+            }
+            .main div img{
+                width: 620px;
+                height: 100px;
+                margin-top: -14px;
+            }
+            a{
+                text-decoration:none;
+                color: white;
+            }
+            #menu ul{
+                background-color: rgb(17, 37, 126);
+                list-style-type: none;
+                border-radius: 5px;
+                margin: 10px;
+            }
+            #menu > ul > li {
+                display: inline-block;
+                position: relative;
+                line-height: 30px;
+                text-align: center;
+                margin-left: 10px;
+            }
+            #menu  ul li:hover {
+                background-color: rgb(245, 193, 22);
+                border-radius: 5px;
+            }
+            .submenu { 
+                display: none;
+                position: absolute;
+            }
+            #menu  ul li:hover .submenu {
+                display: block;
+            }
+            .submenu li {
+                padding-left: 10px;
+                line-height: 20px;
+                width: 200px;
+                text-align: left;
+                position: relative;
+            }
+            .b{
+                margin: 10px;
+                margin-top: 20px;
+            }
+            .main .b img{
+                height: 200px;
+                border: 2px groove;
+                border-radius: 5px;
+            }
+            .c{
+                border: 2px groove;
+                border-radius: 5px;
+                width: 30%;
+                height: 250px;
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .c1{
+                background-color: rgb(231, 223, 223);
+                line-height: 30px;
+                padding-left: 10px;
+            }
+            .d{
+                text-align: center;
+                background-color: rgb(231, 223, 223);
+                margin-top: 292px;
+                line-height: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 5px;
+                border: 2px groove;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="anhchinh">
+            <img src="anh1.jpg" alt="err">
+        </section>
+        <section class="main">
+            <div class="a">
+                <img src="anh2.jpg" alt="err">
+            </div>
+            <section id="menu">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a>
+                        <ul class="submenu">
+                            <li><a href="#">Lịch sử phát triển</a></li>
+                            <li><a href="#">Tầm nhìn và sứ mệnh</a></li>
+                            <li><a href="#">Cơ cấu tổ chức</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Sản phẩm</a>
+                    </li>
+                    <li><a href="#">Giải pháp</a></li>
+                    <li><a href="#">Khách hàng</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </section>
+            <div class="b">
+                <img src="anh3.jpg" alt="err">
+            </div>
+            <div class="c">
+                <div class="c1">
+                    Sản phẩm
+                </div>
+            </div>
+            <div class="c">
+                <div class="c1">
+                    Giải pháp
+                </div>
+            </div>
+            <div class="c">
+                <div class="c1">
+                    Tin tức
+                </div>
+            </div>
+            <div class="d">
+                Bản quyền Trung tâm phát triển phần mềm SEVN<br> Địa chỉ: Dân Tiến - Khoái Châu - Hưng Yên<br>Email: contact@congnghephanmem.vn - Điện thoại: 0912.188.636
+            </div>
+        </section>
+    </body>    
+</html>

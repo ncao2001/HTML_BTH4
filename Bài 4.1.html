@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 4.1</title>
+        <style>
+            .a{
+                width: 960px;
+                height: 600px;
+                border: 1px solid;
+            }
+            .b{
+                position: absolute;
+                width: 500px;
+                height: 200px;
+                left: 50px;
+                top: 50px;
+                border-radius: 5px;
+                background-color: red;
+                z-index: -2;
+            }
+            .c{
+                position: absolute;
+                width: 500px;
+                height: 200px;
+                left: 50px;
+                top: 50px;
+                border-radius: 5px;
+                background-color: green;
+                z-index: -1;
+            }
+            .d{
+                position: absolute;
+                width: 500px;
+                height: 200px;
+                left: 50px;
+                top: 50px;
+                border-radius: 5px;
+                background-color: blue;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">
+            <div class="b">
+                <div class="c">
+                    <div class="d"></div>
+                </div>
+            </div>
+        </div>
+    </body>    
+</body>
+</html>
